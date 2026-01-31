@@ -3,66 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <title>Decibel Zero</title>
+
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #121212;
+            color: #ffffff;
         }
 
+        /* HEADER */
         header {
             background-color: #1db954;
-            color: white;
-            text-align: center;
             padding: 20px;
         }
 
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* CONTAINER */
+        .container {
+            padding: 20px;
+        }
+
+        /* SECTIONS */
         section {
-            padding: 20px;
-            margin: 20px;
-            background-color: white;
-            border-radius: 8px;
+            margin-bottom: 30px;
         }
 
+        section h2 {
+            margin-bottom: 15px;
+        }
+
+        /* CARDS */
+        .cards {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #1e1e1e;
+            padding: 15px;
+            border-radius: 10px;
+            width: 180px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card h3 {
+            margin: 10px 0 5px;
+        }
+
+        /* FOOTER */
         footer {
-            background-color: #333;
-            color: white;
+            background-color: #000;
             text-align: center;
             padding: 15px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            font-size: 14px;
+            color: #aaa;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>🎵 Meu Site de Música</h1>
-        <p>O melhor da música em um só lugar</p>
+        <h1>🎵 Decibel Zero</h1>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Explorar</a>
+            <a href="#">Playlists</a>
+            <a href="#">Artistas</a>
+        </nav>
     </header>
 
-    <section>
-        <h2>Sobre a Música</h2>
-        <p>
-            A música faz parte da nossa vida e nos acompanha em vários momentos.
-            Aqui você encontra informações sobre estilos musicais e artistas.
-        </p>
-    </section>
+    <div class="container">
 
-    <section>
-        <h2>Estilos Musicais</h2>
-        <ul>
-            <li>Pop</li>
-            <li>Rock</li>
-            <li>Hip Hop</li>
-            <li>Eletrônica</li>
-            <li>Sertanejo</li>
-        </ul>
-    </section>
+        <section>
+            <h2>Sobre o Site</h2>
+            <p>
+                O Decibel Zero é um projeto em desenvolvimento inspirado em plataformas
+                de streaming de música como Deezer e Spotify.
+            </p>
+        </section>
+
+        <section>
+            <h2>Estilos Musicais</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>🎤 Pop</h3>
+                    <p>Hits e sucessos</p>
+                </div>
+
+                <div class="card">
+                    <h3>🎸 Rock</h3>
+                    <p>Clássicos e modernos</p>
+                </div>
+
+                <div class="card">
+                    <h3>🎧 Hip Hop</h3>
+                    <p>Ritmo e atitude</p>
+                </div>
+
+                <div class="card">
+                    <h3>🎹 Eletrônica</h3>
+                    <p>Batidas envolventes</p>
+                </div>
+
+                <div class="card">
+                    <h3>🤠 Sertanejo</h3>
+                    <p>Do clássico ao atual</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
 
     <footer>
-        <p>© 2026 - Site de Música</p>
+        © 2026 - Decibel Zero | Projeto em desenvolvimento
     </footer>
 
 </body>
