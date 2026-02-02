@@ -1,147 +1,149 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- Configurações básicas -->
     <meta charset="UTF-8">
-    <title>Decibel Zero</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: #ffffff;
-        }
-
-        /* HEADER */
-        header {
-            background-color: #1db954;
-            padding: 20px;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        nav {
-            margin-top: 10px;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* CONTAINER */
-        .container {
-            padding: 20px;
-        }
-
-        /* SECTIONS */
-        section {
-            margin-bottom: 30px;
-        }
-
-        section h2 {
-            margin-bottom: 15px;
-        }
-
-        /* CARDS */
-        .cards {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        .card {
-            background-color: #1e1e1e;
-            padding: 15px;
-            border-radius: 10px;
-            width: 180px;
-            text-align: center;
-            transition: transform 0.3s;
-        }
-
-        .card:hover {
-            transform: scale(1.05);
-        }
-
-        .card h3 {
-            margin: 10px 0 5px;
-        }
-
-        /* FOOTER */
-        footer {
-            background-color: #000;
-            text-align: center;
-            padding: 15px;
-            font-size: 14px;
-            color: #aaa;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Decibel Zero - Plataforma de streaming de música com os melhores estilos musicais">
+    <meta name="keywords" content="música, streaming, pop, rock, hip hop, eletrônica, sertanejo">
+    <meta name="author" content="Decibel Zero">
+    
+    <!-- Título da página -->
+    <title>Decibel Zero - Sua Plataforma de Música</title>
+    
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon (ícone da aba do navegador) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎵</text></svg>">
 </head>
 <body>
 
+    <!-- ============================================
+         CABEÇALHO DO SITE
+         Contém logo e menu de navegação principal
+         ============================================ -->
     <header>
-        <h1>🎵 Decibel Zero</h1>
-        <nav>
-            <a href="#">Início</a>
-            <a href="#">Explorar</a>
-            <a href="#">Playlists</a>
-            <a href="#">Artistas</a>
-        </nav>
+        <div class="header-container">
+            <!-- Logo do site -->
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🎵</span>
+                <span>Decibel Zero</span>
+            </a>
+            
+            <!-- Menu de navegação -->
+            <nav>
+                <a href="index.html" class="active">Início</a>
+                <a href="explorar.html">Explorar</a>
+                <a href="playlists.html">Playlists</a>
+                <a href="artistas.html">Artistas</a>
+            </nav>
+        </div>
     </header>
 
-    <div class="container">
-
-        <section>
+    <!-- ============================================
+         CONTEÚDO PRINCIPAL
+         Contém todas as seções da página
+         ============================================ -->
+    <main>
+        
+        <!-- Seção: Sobre o Site -->
+        <section id="sobre">
             <h2>Sobre o Site</h2>
-            <p>
-                O Decibel Zero é um projeto em desenvolvimento inspirado em plataformas
-                de streaming de música como Deezer e Spotify.
+            <p class="about-text">
+                O <strong>Decibel Zero</strong> é um projeto em desenvolvimento inspirado nas melhores
+                plataformas de streaming de músicas. Nossa missão é proporcionar
+                uma experiência musical única, conectando você aos seus artistas favoritos e descobrindo
+                novos sons que combinam com seu estilo. Explore milhares de músicas, crie playlists
+                personalizadas e mergulhe no universo da música sem limites.
             </p>
         </section>
 
-        <section>
+        <!-- Seção: Estilos Musicais -->
+        <section id="estilos">
             <h2>Estilos Musicais</h2>
-
+            
+            <!-- Grid de cards com os estilos musicais -->
             <div class="cards">
-                <div class="card">
-                    <h3>🎤 Pop</h3>
+                
+                <!-- Card: Pop -->
+                <a href="Pop.html" class="card">
+                    <span class="card-icon">🎤</span>
+                    <h3>Pop</h3>
                     <p>Hits e sucessos</p>
-                </div>
+                    <span class="card-badge">Popular</span>
+                </a>
 
-                <div class="card">
-                    <h3>🎸 Rock</h3>
+                <!-- Card: Rock -->
+                <a href="Rock.html" class="card">
+                    <span class="card-icon">🎸</span>
+                    <h3>Rock</h3>
                     <p>Clássicos e modernos</p>
-                </div>
+                </a>
 
-                <div class="card">
-                    <h3>🎧 Hip Hop</h3>
+                <!-- Card: Hip Hop -->
+                <a href="hiphop.html" class="card">
+                    <span class="card-icon">🎧</span>
+                    <h3>Hip Hop</h3>
                     <p>Ritmo e atitude</p>
-                </div>
+                </a>
 
-                <div class="card">
-                    <h3>🎹 Eletrônica</h3>
+                <!-- Card: Eletrônica -->
+                <a href="eletronica.html" class="card">
+                    <span class="card-icon">🎹</span>
+                    <h3>Eletrônica</h3>
                     <p>Batidas envolventes</p>
-                </div>
+                </a>
 
-                <div class="card">
-                    <h3>🤠 Sertanejo</h3>
+                <!-- Card: Sertanejo -->
+                <a href="sertanejo.html" class="card">
+                    <span class="card-icon">🤠</span>
+                    <h3>Sertanejo</h3>
                     <p>Do clássico ao atual</p>
-                </div>
+                    <span class="card-badge">Novo</span>
+                </a>
+
+                <!-- Card: Jazz -->
+                <a href="jazz.html" class="card">
+                    <span class="card-icon">🎺</span>
+                    <h3>Jazz</h3>
+                    <p>Sofisticação e swing</p>
+                </a>
+
+                <!-- Card: Reggae -->
+                <a href="reggae.html" class="card">
+                    <span class="card-icon">🌴</span>
+                    <h3>Reggae</h3>
+                    <p>Vibes e relaxamento</p>
+                </a>
+
+                <!-- Card: MPB -->
+                <a href="MPB.html" class="card">
+                    <span class="card-icon">🎵</span>
+                    <h3>MPB</h3>
+                    <p>Música Popular Brasileira</p>
+                </a>
+
             </div>
         </section>
 
-    </div>
+    </main>
 
+    <!-- ============================================
+         RODAPÉ DO SITE
+         Informações de copyright e links
+         ============================================ -->
     <footer>
-        © 2026 - Decibel Zero | Projeto em desenvolvimento
+        <p>&copy; 2026 - Decibel Zero | Projeto em desenvolvimento</p>
+        
+        <!-- Links adicionais no rodapé -->
+        <div class="footer-links">
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="termos.html">Termos de Uso</a>
+            <a href="privacidade.html">Privacidade</a>
+            <a href="contato.html">Contato</a>
+            <a href="ajuda.html">Ajuda</a>
+        </div>
     </footer>
 
 </body>
