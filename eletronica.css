@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #010201;
+    color: #ffffff;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ============================================
+   CABEÇALHO (HEADER)
+   ============================================ */
+
+header {
+    background: #1db954;
+    color: #000000;
+    padding: 0;
+    box-shadow: 0 4px 6px rgba(67, 65, 65, 0);    
+    top: 0;
+    
+}
+
+header h1 {
+    
+
+}
+
+.Subtitle {
+    max-width: 1200px;
+    margin: 5px 10px;
+    display: flex;    
+    align-items: center;
+    
+}
+
+.content {
+    display: flex ;
+    color: #FFFFFF;
+    flex-direction: row;
+    gap: 200px;
+
+}
+
+.mostPlayed {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.newest {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer {
+background-color: #1db954;
+height: 100px;
+margin-top: auto;
+justify-content: center;
+display: flex;
+}
+
+.footer-links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #1db954;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #1ed760;
+    text-decoration: underline;
+}
+
