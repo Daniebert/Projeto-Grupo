@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #e1e6e8;
+}
+
+.descricao{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+.separa {
+    margin-top: 0.5rem;
+    margin: 10px;
+}
+
+h1{
+    font-size: 3.5rem;
+    margin: 10px;
+}
+
+section{
+    margin: 10px;
+    margin-top: 1rem;
+}
+.subtitulo{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.img{
+    width: 300px;
+    height: 300px;
+    margin: 25px 0;
+    margin-left: 25rem;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+.card{
+    margin: 15px;
+}
+
+li{
+    font-size: 1.1rem;
+    margin: 10px;
+}
+
+.footerText{
+    font-size: 1.5rem;
+    margin-top: 35px;
+    padding-top: 0.5px;
+    padding-left: 17vw;
+    background-color: gray;
+}
+
+.fds{
+    background-color: gray;
+}
