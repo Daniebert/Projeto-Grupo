@@ -1,12 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: #e1e6e8;
+    background-color: #1a1a1a;
 }
 
 .descricao{
     font-size: 1.5rem;
     font-weight: 200;
+    color: #e1e6e8;
 }
 .separa {
     margin-top: 0.5rem;
@@ -16,6 +17,7 @@
 h1{
     font-size: 3.5rem;
     margin: 10px;
+    color: #1db954;
 }
 
 section{
@@ -25,6 +27,7 @@ section{
 .subtitulo{
     font-size: 1.8rem;
     font-weight: 600;
+    color: #1db954;
 }
 
 .img{
@@ -36,6 +39,7 @@ section{
 
 p{
     font-size: 1.2rem;
+    color: #e1e6e8;
 }
 
 .card{
@@ -45,16 +49,31 @@ p{
 li{
     font-size: 1.1rem;
     margin: 10px;
+    color: #e1e6e8;
 }
+
+
+h3{
+   color: #e1e6e8;
+}  
 
 .footerText{
     font-size: 1.5rem;
     margin-top: 35px;
     padding-top: 0.5px;
     padding-left: 17vw;
-    background-color: gray;
+    background-color: #1a1a1a;
 }
 
 .fds{
-    background-color: gray;
+    background-color: #1a1a1a;
+}
+
+.image{
+    background: linear-gradient(90deg, #1db954 5%, #1ed760 23%);
+}
+
+.logo{
+    height: 95px;
+    width: 430px;
 }
